@@ -7,6 +7,11 @@ Files: *
 Copyright: AFMAAI12 <rudius.greyrat3@gmail.com>
 
 Files:
+ gate_active.png
+ gate_active@2x.png
+Copyright: Zuckung <https://github.com/zuckung/endless-sky-plugins>
+
+Files:
  icon*.png
 Copyright: Michael Zahniser <mzahniser@gmail.com>
 License: CC-BY-SA-4.0
