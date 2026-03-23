@@ -1,5 +1,5 @@
 name "Gates To The Sol"
-about "Add gates to the Sol at some planets in the border of humans space"
+about "Add gates to the Sol at some systems in the border of humans space"
 about "by AFMAAI12"
 authors
 	"afmaai12"
