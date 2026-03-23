@@ -1,0 +1,201 @@
+# mission "jump gates install"
+# event "jump gates install"
+# wormhole "Jump Gate Naos-Sol"
+# wormhole "Jump Gate Spica-Sol"
+# wormhole "Jump Gate Alniyat-Sol"
+# wormhole "Jump Gate Tarazed-Sol"
+# wormhole "Jump Gate Sheratan-Sol"
+# wormhole "Jump Gate Alnitak-Sol"
+# planet "Jump Gate Naos-Sol"
+# planet "Jump Gate Spica-Sol"
+# planet "Jump Gate Alniyat-Sol"
+# planet "Jump Gate Tarazed-Sol"
+# planet "Jump Gate Sheratan-Sol"
+# planet "Jump Gate Alnitak-Sol"
+# government "RG Jump Gates"
+
+
+
+mission "jump gates install"
+	invisible
+	landing
+	source
+		government "Free Worlds" "Republic" "Syndicate" "Militia" "Merchant" "Independent" "Pirate"
+	to offer
+		"days since start" > 194
+	on offer
+		event "jump gates install"
+		fail
+
+
+event "jump gates install"
+	system "Naos"
+		remove object "Jump Gate Naos-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2000
+			period 1
+			offset 210
+		add object "Jump Gate Naos-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2000
+			period 1
+			offset 210
+	system "Spica"
+		remove object "Jump Gate Spica-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 1500
+			period 1
+			offset 150
+		add object "Jump Gate Spica-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 1500
+			period 1
+			offset 150
+	system "Alniyat"
+		remove object "Jump Gate Alniyat-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 1500
+			period 1
+			offset 70
+		add object "Jump Gate Alniyat-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 1500
+			period 1
+			offset 70
+	system "Tarazed"
+		remove object "Jump Gate Tarazed-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2200
+			period 1
+			offset 30
+		add object "Jump Gate Tarazed-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2200
+			period 1
+			offset 30
+	system "Sheratan"
+		remove object "Jump Gate Sheratan-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2000
+			period 1
+			offset 315
+		add object "Jump Gate Sheratan-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 2000
+			period 1
+			offset 315
+	system "Alnitak"
+		remove object "Jump Gate Alnitak-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 800
+			period 1
+			offset 270
+		add object "Jump Gate Alnitak-Sol"
+			sprite planet/gate_active
+				scale 1
+			distance 800
+			period 1
+			offset 270
+
+
+wormhole "Jump Gate Naos-Sol"
+	mappable
+	"display name" "Naos - Sol"
+	link "Naos" "Sol"
+	link "Sol" "Naos"
+	color "wormholes: RG Jump Gates"
+
+	
+wormhole "Jump Gate Spica-Sol"
+	mappable
+	"display name" "Spica - Sol"
+	link "Spica" "Sol"
+	link "Sol" "Spica"
+	color "wormholes: RG Jump Gates"
+
+	
+wormhole "Jump Gate Alniyat-Sol"
+	mappable
+	"display name" "Alniyat - Sol"
+	link "Alniyat" "Sol"
+	link "Sol" "Alniyat"
+	color "wormholes: RG Jump Gates"
+
+	
+wormhole "Jump Gate Tarazed-Sol"
+	mappable
+	"display name" "Tarazed - Sol"
+	link "Tarazed" "Sol"
+	link "Sol" "Tarazed"
+	color "wormholes: RG Jump Gates"
+
+	
+wormhole "Jump Gate Sheratan-Sol"
+	mappable
+	"display name" "Sheratan - Sol"
+	link "Sheratan" "Sol"
+	link "Sol" "Sheratan"
+	color "wormholes: RG Jump Gates"
+
+	
+wormhole "Jump Gate Alnitak-Sol"
+	mappable
+	"display name" "Alnitak - Sol"
+	link "Alnitak" "Sol"
+	link "Sol" "Alnitak"
+	color "wormholes: RG Jump Gates"
+
+	
+planet "Jump Gate Naos-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Naos-Sol"
+
+	
+planet "Jump Gate Spica-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Spica-Sol"
+
+	
+planet "Jump Gate Alniyat-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Alniyat-Sol"
+
+	
+planet "Jump Gate Tarazed-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Tarazed-Sol"
+
+	
+planet "Jump Gate Sheratan-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Sheratan-Sol"
+
+	
+planet "Jump Gate Alnitak-Sol"
+	spaceport ``
+	government "RG Jump Gates"
+	wormhole "Jump Gate Alnitak-Sol"
+
+
+government "RG Jump Gates"
+	"player reputation" 1
+	"bribe" 0
+	"fine" 0
+
+color "wormholes: RG Jump Gates" .9 .4 .0
